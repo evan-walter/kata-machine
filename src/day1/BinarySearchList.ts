@@ -3,7 +3,7 @@ export default function bs_list(haystack: number[], needle: number): boolean {
     let lo = 0;
     let hi = haystack.length;
 
-    let m = lo + (hi - lo) / 2;
+    let m = Math.floor(lo + (hi - lo) / 2);
     let v = haystack[m];
 
     while (lo < hi) {

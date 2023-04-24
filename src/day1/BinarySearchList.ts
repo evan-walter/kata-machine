@@ -3,10 +3,10 @@ export default function bs_list(haystack: number[], needle: number): boolean {
     let lo = 0;
     let hi = haystack.length;
 
-    let m = Math.floor(lo + (hi - lo) / 2);
-    let v = haystack[m];
-
     while (lo < hi) {
+        const m = Math.floor(lo + (hi - lo) / 2);
+        const v = haystack[m];
+
         if (v === needle) {
             return true;
         } else if (v > needle) {
